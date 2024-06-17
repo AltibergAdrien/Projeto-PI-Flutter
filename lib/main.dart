@@ -14,7 +14,6 @@ void main() async {
 }
 
 Future<void> _initializeServices() async {
-
   final databaseHelper = di.dependencyAssembly<DatabaseHelper>();
 
   await databaseHelper.openDB(companyId: 1, dbName: 'AFIXFLOW.db');
